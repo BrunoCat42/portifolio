@@ -70,25 +70,25 @@ a {
   position: relative;
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
 
-@keyframes fadeInAnimate{
-  0%{
+@keyframes fadeInAnimate {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes slideUpAnimate{
-  0%{
+@keyframes slideUpAnimate {
+  0% {
     opacity: 0;
     transform: translateY(16px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -277,16 +277,14 @@ a {
   font-weight: 600;
   line-height: 100px;
   color: var(--primary);
-    animation: slideUpAnimate 500ms 100ms backwards;
-
+  animation: slideUpAnimate 500ms 100ms backwards;
 }
 
 .header_subtitle {
   font-size: 44px;
   font-weight: 600;
   line-height: 44px;
-    animation: slideUpAnimate 500ms 150ms backwards;
-
+  animation: slideUpAnimate 500ms 150ms backwards;
 }
 
 .header_about {
@@ -299,8 +297,7 @@ a {
   display: flex;
   gap: 16px;
   margin-top: 16px;
-    animation: slideUpAnimate 500ms 300ms backwards;
-
+  animation: slideUpAnimate 500ms 300ms backwards;
 }
 
 .header__scroll {
@@ -430,6 +427,18 @@ a {
   height: 100%;
   z-index: 2;
   position: relative;
+}
+
+.about__skills__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.about__subtitle {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* Projects */
@@ -638,8 +647,8 @@ a {
   border-color: var(--primary);
 }
 
-.success{
-  position:fixed;
+.success {
+  position: fixed;
   width: 320px;
   background-color: white;
   top: 12px;
@@ -654,31 +663,31 @@ a {
   transition: 250ms ease;
 }
 
-.success-open .success{
+.success-open .success {
   transform: translateX(0%);
 }
 
-.success__icon{
+.success__icon {
   font-size: 28px;
   color: #4bb543;
 }
 
-.success__text{
+.success__text {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.success__text__title{
+.success__text__title {
   font-size: 16px;
   font-weight: 600;
 }
 
-.success__text__para{
+.success__text__para {
   font-size: 14px;
 }
 
-.contact__form__loading{
+.contact__form__loading {
   position: absolute;
   top: 0;
   left: 0;
@@ -693,16 +702,16 @@ a {
   font-size: 24px;
 }
 
-.contact__form__loading__icon{
+.contact__form__loading__icon {
   animation: loadingSpinner 1000ms infinite;
 }
 
-@keyframes loadingSpinner{
-  0%{
+@keyframes loadingSpinner {
+  0% {
     rotate: 0;
   }
 
-  100%{
+  100% {
     rotate: 360deg;
   }
 }
